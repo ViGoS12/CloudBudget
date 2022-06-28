@@ -1,79 +1,51 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
-}
+@import './variables.scss';
 
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
+.top {
+  height: 782px;
+  text-align: center;
+  &__img {
+    background-image: url('../assets/img/hero_image.png');
+    background-size: cover;
+  }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  &__gradient {
+    background: linear-gradient(90deg, $crimson 0%, $orange 100%);
+    opacity: 0.8;
+  }
 
-input,
-button,
-textarea {
-  font-family: inherit;
-}
+  &__title {
+    margin-top: 140px;
+    margin-bottom: 39px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
+  &__text {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $white;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
+  &__btn {
+    padding: 17px 53px;
+    margin-bottom: 187px;
+    border-radius: 6px;
+    background-color: $white;
+    color: #ed4c5c;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
 }

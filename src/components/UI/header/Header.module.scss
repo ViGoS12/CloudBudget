@@ -1,0 +1,72 @@
+@import '../../../scss/variables.scss';
+
+.header {
+  padding-top: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+
+  margin: 0 auto;
+
+  &__logo {
+    display: flex;
+    color: $white;
+  }
+
+  &__logo_text {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 113px;
+  }
+
+  &__item {
+    margin-right: 21px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+
+  &__language_btn {
+    color: $white;
+    background: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__language {
+    padding: 0 11px;
+  }
+
+  &__btn {
+    padding: 11px 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background: none;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
