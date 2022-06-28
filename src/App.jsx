@@ -1,6 +1,8 @@
 import './scss/app.scss'
 import Header from './components/UI/header'
 import Footer from './components/UI/footer'
+import video from './assets/img/video_bg.jpg'
+import btn from './assets/svg/triangleR_btn.svg'
 
 function App() {
   return (
@@ -18,7 +20,36 @@ function App() {
           </div>
         </div>
       </section>
-      <main>Main</main>
+      <main>
+        <section className='info'>
+          <div className='conteiner'>
+            <div className='leftside'>
+              <div className='info__title'>
+                Easy to Use Cloud Budget Management Software
+              </div>
+              <div className='info__text'>
+                Our software is made so you can access and manage your budget
+                and expenses online at any time from any device. It provides
+                detailed income and expense reports with graphs so you can
+                easilly see your spending patterns and budget at a glance. Read
+                below to find out more.
+              </div>
+              <button className='info__link'>Learn More</button>
+            </div>
+            <div className='rigthside'>
+              <button className='info__btn'>
+                <img src={btn} alt='video' />
+              </button>
+              <img className='info__img' src={video} alt='video' />
+            </div>
+          </div>
+        </section>
+        <section className='features'>
+          <div className='conteiner'>
+            <div className='features__title'>Features</div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   )

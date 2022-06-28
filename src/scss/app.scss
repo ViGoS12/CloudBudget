@@ -1,8 +1,9 @@
 @import './variables.scss';
 
 .top {
-  height: 782px;
+  max-height: 782px;
   text-align: center;
+  margin-bottom: 0;
   &__img {
     background-image: url('../assets/img/hero_image.png');
     background-size: cover;
@@ -41,11 +42,88 @@
     margin-bottom: 187px;
     border-radius: 6px;
     background-color: $white;
-    color: #ed4c5c;
+    color: $light-red;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
   }
+}
+
+.video {
+  max-height: 500px;
+  background-color: $white;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.info {
+  max-height: 500px;
+  &__title {
+    max-width: 445px;
+    margin-top: 140px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $black;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $black;
+    text-align: justify;
+    max-width: 445px;
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    background: none;
+    margin-bottom: 110px;
+    color: $light-red;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+  }
+
+  &__btn {
+    position: absolute;
+    left: -33px;
+    background: $light-red;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+  }
+
+  &__img {
+    margin: 94px 0;
+    width: 445px;
+    height: 311px;
+    border-radius: 15px;
+  }
+}
+
+.rigthside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.features {
+  background: #fafafa;
+  max-height: 660px;
 }
