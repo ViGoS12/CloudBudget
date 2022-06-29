@@ -1,15 +1,23 @@
 import './scss/app.scss'
 import Header from './components/UI/header'
 import Footer from './components/UI/footer'
-import video from './assets/img/video_bg.jpg'
-import triangle_btn from './assets/svg/triangleR_btn.svg'
+
+import main_slider_img from './assets/img/slider_image1.jpg'
+import back_slider_img1 from './assets/img/slider_image2.jpg'
+import back_slider_img2 from './assets/img/slider_image3.jpg'
 import feature1 from './assets/img/features1.jpg'
 import feature2 from './assets/img/features2.jpg'
 import feature3 from './assets/img/features3.jpg'
-import cloud from './assets/svg/cloud.svg'
+import video from './assets/img/video_bg.jpg'
+
 import secure from './assets/svg/secure.svg'
+import cloud from './assets/svg/cloud.svg'
 import pdf from './assets/svg/pdf.svg'
 import csv from './assets/svg/csv.svg'
+import triangle_btn from './assets/svg/triangleR_btn.svg'
+import googleplay from './assets/svg/google-play.svg'
+import appstore from './assets/svg/appstore.svg'
+import windows from './assets/svg/windows.svg'
 
 function App() {
   return (
@@ -134,6 +142,39 @@ function App() {
               <div className='techonology__subtitle'>
                 All your information is stored on secure cloud servers
               </div>
+            </div>
+          </div>
+        </section>
+        <section className='download'>
+          <div className='container'>
+            <div className='download__leftside'>
+              <div className='download__title'>
+                Stay focused on saving money
+              </div>
+              <div className='download__text'>
+                It is important to stay focused on saving money in any way you
+                can. We help you monitor your spending habits so you can easily
+                spot and cut any unnecessary expenses. Simply join today to get
+                started!
+              </div>
+              <div className='download__block_btn'>
+                <img src={googleplay} alt='' className='download__store_btn' />
+                <img src={appstore} alt='' className='download__store_btn' />
+                <img src={windows} alt='' className='download__store_btn' />
+              </div>
+            </div>
+            <div className='download__rideside'>
+              <img src={main_slider_img} alt='' className='download__img' />
+              <img
+                src={back_slider_img1}
+                alt=''
+                className='download__img_back1'
+              />
+              <img
+                src={back_slider_img2}
+                alt=''
+                className='download__img_back2'
+              />
             </div>
           </div>
         </section>
