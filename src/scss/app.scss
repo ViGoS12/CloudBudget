@@ -189,3 +189,75 @@
     line-height: 150%;
   }
 }
+
+.technology {
+  background: $white;
+  height: 500px;
+
+  &__main_title {
+    text-align: center;
+    margin-top: 63px;
+    margin-bottom: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $black;
+  }
+
+  &__block {
+    width: 255px;
+    position: relative;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+    color: rgba(16, 16, 16, 0.08);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 71px;
+    left: 104px;
+  }
+
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.icon_cloud {
+  height: 55px;
+  width: 70px;
+  position: absolute;
+  left: 93px;
+}
+
+.icon_secure {
+  height: 59px;
+  width: 47px;
+}
+
+.icon_pdf {
+  height: 54px;
+  width: 47px;
+}
+
+.icon_csv {
+  height: 54px;
+  width: 47px;
+}

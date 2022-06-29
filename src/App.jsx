@@ -2,10 +2,14 @@ import './scss/app.scss'
 import Header from './components/UI/header'
 import Footer from './components/UI/footer'
 import video from './assets/img/video_bg.jpg'
-import btn from './assets/svg/triangleR_btn.svg'
+import triangle_btn from './assets/svg/triangleR_btn.svg'
 import feature1 from './assets/img/features1.jpg'
 import feature2 from './assets/img/features2.jpg'
 import feature3 from './assets/img/features3.jpg'
+import cloud from './assets/svg/cloud.svg'
+import secure from './assets/svg/secure.svg'
+import pdf from './assets/svg/pdf.svg'
+import csv from './assets/svg/csv.svg'
 
 function App() {
   return (
@@ -41,7 +45,7 @@ function App() {
             </div>
             <div className='rigthside'>
               <button className='info__btn'>
-                <img src={btn} alt='video' />
+                <img src={triangle_btn} alt='video' />
               </button>
               <img className='info__img' src={video} alt='video' />
             </div>
@@ -86,6 +90,49 @@ function App() {
                   Our software is made so you can access and manage your budget
                 </div>
                 <div className='features__link'>Read More</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='technology'>
+          <div className='technology__main_title'>Technology</div>
+          <div className='container'>
+            <div className='technology__block'>
+              <div className='technology__text'>01</div>
+              <img
+                src={cloud}
+                alt=''
+                className='technology__icon icon_cloud'></img>
+              <div className='technology__title'>Cloud Storage</div>
+              <div className='techonology__subtitle'>
+                Access your account from anywhere in the world on any device
+              </div>
+            </div>
+            <div className='technology__block'>
+              <div className='technology__text'>02</div>
+              <img
+                src={secure}
+                alt=''
+                className='technology__icon icon_secure'></img>
+              <div className='technology__title'>Secure</div>
+              <div className='techonology__subtitle'>
+                All your information is stored on secure cloud servers
+              </div>
+            </div>
+            <div className='technology__block'>
+              <div className='technology__text'>03</div>
+              <img src={pdf} alt='' className='technology__icon icon_pdf'></img>
+              <div className='technology__title'>PDF Download</div>
+              <div className='techonology__subtitle'>
+                Download any of your reports in PDF format
+              </div>
+            </div>
+            <div className='technology__block'>
+              <div className='technology__text'>04</div>
+              <img src={csv} alt='' className='technology__icon icon_csv'></img>
+              <div className='technology__title'>CSV Download</div>
+              <div className='techonology__subtitle'>
+                All your information is stored on secure cloud servers
               </div>
             </div>
           </div>
