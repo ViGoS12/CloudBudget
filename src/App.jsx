@@ -16,6 +16,7 @@ import pdf from './assets/svg/pdf.svg'
 import csv from './assets/svg/csv.svg'
 import triangle_btn from './assets/svg/triangleR_btn.svg'
 import googleplay from './assets/svg/google-play.svg'
+import select_btn from './assets/svg/select_btn.svg'
 import appstore from './assets/svg/appstore.svg'
 import windows from './assets/svg/windows.svg'
 
@@ -38,7 +39,7 @@ function App() {
       <main>
         <section className='info'>
           <div className='container'>
-            <div className='leftside'>
+            <div className='info__leftside'>
               <div className='info__title'>
                 Easy to Use Cloud Budget Management Software
               </div>
@@ -51,7 +52,7 @@ function App() {
               </div>
               <button className='info__link'>Learn More</button>
             </div>
-            <div className='rigthside'>
+            <div className='info__rightside'>
               <button className='info__btn'>
                 <img src={triangle_btn} alt='video' />
               </button>
@@ -163,7 +164,7 @@ function App() {
                 <img src={windows} alt='' className='download__store_btn' />
               </div>
             </div>
-            <div className='download__rideside'>
+            <div className='download__rightside'>
               <img src={main_slider_img} alt='' className='download__img' />
               <img
                 src={back_slider_img1}
@@ -175,6 +176,43 @@ function App() {
                 alt=''
                 className='download__img_back2'
               />
+            </div>
+          </div>
+        </section>
+        <section className='contact'>
+          <div className='container'>
+            <div className='contact__leftside'>
+              <div className='contact__title'>Contact</div>
+              <div className='contact__text'>
+                Questions or concerns? Just fill out the form below and our
+                support team will get back to you within 24 hours
+              </div>
+            </div>
+            <div className='contact__rightside'>
+              <div className='contact__fullname'>
+                <input
+                  className='contact__name'
+                  type='text'
+                  placeholder='First Name'
+                />
+                <input
+                  className='contact__name'
+                  type='text'
+                  placeholder='Last Name'
+                />
+              </div>
+              <input
+                className='contact__phone'
+                type='num'
+                placeholder='Phone Number'
+              />
+              <div className='contact__select'>
+                <select className='contact__service' name='select'>
+                  <option value='1'>Select Service</option>
+                </select>
+                <img src={select_btn} alt='' className='contact__select_svg' />
+              </div>
+              <button className='contact__btn'>Submit Now</button>
             </div>
           </div>
         </section>
